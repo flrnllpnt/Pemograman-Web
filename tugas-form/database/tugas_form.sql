@@ -1,0 +1,41 @@
+CREATE TABLE `pendaftaran` (
+	`id_pendaftaran` INT(11) NOT NULL,
+	`jalur_pendaftaran` VARCHAR(50) NOT NULL DEFAULT '',
+	`nama` VARCHAR(100) NOT NULL,
+	`ttl` VARCHAR(20) NOT NULL,
+	`nik` CHAR(16) NOT NULL,
+	`jk` INT(11) NOT NULL,
+	`agama` VARCHAR(10) NOT NULL,
+	`status` VARCHAR(50) NOT NULL DEFAULT '',
+	`alamat` VARCHAR(50) NOT NULL,
+	`kode_pos` CHAR(5) NOT NULL,
+	`no_hp` CHAR(14) NOT NULL,
+	`email` VARCHAR(50) NOT NULL,
+	`asal_sklh` VARCHAR(50) NOT NULL DEFAULT '',
+	`kota_sklh` VARCHAR(50) NOT NULL DEFAULT '',
+	`provinsi` VARCHAR(50) NOT NULL DEFAULT '',
+	`jurusan_sklh` VARCHAR(50) NOT NULL DEFAULT '',
+	`tahun_lls` INT(11) NOT NULL DEFAULT '0',
+	`biaya` VARCHAR(50) NOT NULL DEFAULT '0',
+	`nama_ayah` VARCHAR(50) NOT NULL DEFAULT '0',
+	`nama_ibu` VARCHAR(50) NOT NULL,
+	`alamat_ortu` VARCHAR(50) NOT NULL,
+	`kode_posortu` VARCHAR(50) NOT NULL,
+	`no_hportu` VARCHAR(50) NOT NULL,
+	`pendidikan_ayah` VARCHAR(50) NOT NULL,
+	`pendidikan_ibu` VARCHAR(50) NOT NULL,
+	`status_ayah` VARCHAR(50) NOT NULL,
+	`status_ibu` VARCHAR(50) NOT NULL,
+	`pekerjaan_ayah` VARCHAR(50) NOT NULL,
+	`pekerjaan_ibu` VARCHAR(50) NOT NULL,
+	`penghasilan_ayah` VARCHAR(50) NOT NULL,
+	`penghasilan_ibu` VARCHAR(50) NOT NULL,
+	`program_studi` VARCHAR(50) NOT NULL,
+	`pilihan` VARCHAR(50) NOT NULL,
+	`rekomendasi` VARCHAR(50) NOT NULL,
+	PRIMARY KEY (`id_pendaftaran`)
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=19
+;
